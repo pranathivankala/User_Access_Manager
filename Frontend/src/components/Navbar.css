@@ -1,6 +1,5 @@
 .navbar {
-  background: linear-gradient(135deg, #1e293b, #334155);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background-color: #b6ccd7;
   position: sticky;
   top: 0;
   width: 100%;
@@ -21,7 +20,7 @@
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #60a5fa;
+  color: #1457a9;
   letter-spacing: 1px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -61,7 +60,7 @@
 }
 
 .logout-btn {
-  background-color: #ef4444;
+  background-color: #e62c2c;
 }
 
 .logout-btn:hover {

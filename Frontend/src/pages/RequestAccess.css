@@ -26,7 +26,7 @@
 }
 
 .request-access-form button {
-  background-color: #4caf50;
+  background-color: #8f3eb4;
   color: white;
   font-weight: bold;
   border: none;
@@ -35,5 +35,5 @@
 }
 
 .request-access-form button:hover {
-  background-color: #43a047;
+  background-color: #3d0857;
 }
