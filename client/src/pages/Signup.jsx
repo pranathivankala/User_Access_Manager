@@ -7,7 +7,7 @@ function Signup() {
   const [form, setForm] = useState({
     username: '',
     password: '',
-    role: 'Employee',
+    role: '',
   });
 
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ function Signup() {
     try {
       await api.post('/auth/signup', form);
       alert('Signup successful. Redirecting to login...');
-      navigate('/login'); 
+      navigate('/login');
     } catch (err) {
       alert(err?.response?.data?.message || 'Signup failed');
     }
@@ -48,6 +48,7 @@ function Signup() {
             required
           />
           <select name="role" value={form.role} onChange={handleChange}>
+            <option value="">Select</option>
             <option value="Employee">Employee</option>
             <option value="Manager">Manager</option>
             <option value="Admin">Admin</option>

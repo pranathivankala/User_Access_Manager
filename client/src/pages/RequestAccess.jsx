@@ -4,7 +4,7 @@ import './RequestAccess.css';
 
 function RequestAccess() {
   const [softwareList, setSoftwareList] = useState([]);
-  const [form, setForm] = useState({ softwareId: '', accessType: 'Read', reason: '' });
+  const [form, setForm] = useState({ softwareId: '', accessType: '', reason: '' });
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -61,6 +61,7 @@ function RequestAccess() {
         onChange={handleChange}
         required
       >
+        <option value="">Select</option>
         <option value="Read">Read</option>
         <option value="Write">Write</option>
         <option value="Admin">Admin</option>
