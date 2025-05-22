@@ -1,0 +1,56 @@
+
+.requests-container {
+  padding: 240px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.request-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.request-card p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.request-card b {
+  color: #222;
+}
+
+.button-group {
+  margin-top: 12px;
+}
+
+.button-group button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button-approve {
+  background-color: #4caf50;
+}
+
+.button-approve:hover {
+  background-color: #43a047;
+}
+
+.button-reject {
+  background-color: #f44336;
+}
+
+.button-reject:hover {
+  background-color: #e53935;
+}

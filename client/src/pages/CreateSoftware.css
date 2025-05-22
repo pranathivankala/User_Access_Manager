@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to top right, #f4f4f4, #919193);
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 520px;
+  margin: 80px auto;
+  padding: 36px 32px;
+  background-color: #691ddc;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(76, 71, 217, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-4px);
+}
+
+.form-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #442d15;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.form-container textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.access-levels {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.access-levels label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #1f2937;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.access-levels label:hover {
+  background-color: #93aee3;
+}
+
+.access-levels input[type='checkbox'] {
+  accent-color: #3b82f6;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #893bf6, #6366f1);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.form-container button:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  transform: translateY(-2px);
+}

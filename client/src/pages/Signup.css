@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: url('https://wallpaperaccess.com/full/1385525.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.signup-box {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.signup-box:hover {
+  transform: translateY(-4px);
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: 0.5px;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box form input,
+.signup-box form select {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.signup-box form input:focus,
+.signup-box form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+  background-color: #fff;
+}
+
+.signup-box form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  cursor: pointer;
+}
+
+.signup-box button {
+  padding: 14px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.signup-box button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.signup-box p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.signup-box p span {
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.signup-box p span:hover {
+  color: #1d4ed8;
+}

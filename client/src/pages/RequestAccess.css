@@ -1,0 +1,39 @@
+
+.request-access-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.request-access-form select,
+.request-access-form textarea,
+.request-access-form button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.request-access-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.request-access-form button {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.request-access-form button:hover {
+  background-color: #43a047;
+}
