@@ -42,7 +42,7 @@ body {
   width: 100%;
   padding: 14px 16px;
   margin-bottom: 20px;
-  border: 1px solid #442d15;
+  border: 1px solid #000000;
   border-radius: 10px;
   font-size: 15px;
   background-color: #ffffff;
@@ -103,7 +103,6 @@ body {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s;
 }
 
 .form-container button:hover {

@@ -15,6 +15,7 @@
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
+  position: relative;
 }
 
 .navbar-logo {
@@ -32,39 +33,72 @@
   flex-wrap: nowrap;
   gap: 1rem;
   overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .navbar-links::-webkit-scrollbar {
-  display: none;
+  display: none; 
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #0b0b0b;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e32222;
 }
 
 .navbar-btn {
   font-size: 0.95rem;
   font-weight: 500;
   color: #ffffff;
-  background-color: #3b82f6;
+  background-color: #1457a9;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
+  border-radius: 10px;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
   white-space: nowrap;
 }
 
-.navbar-btn:hover {
-  background-color: #2563eb;
-  transform: translateY(-1px);
-}
+ 
 
 .logout-btn {
   background-color: #e62c2c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .logout-btn:hover {
   background-color: #dc2626;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 20px;
+  background-color: #1457a9;
+  margin: 4px 0;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -78,14 +112,35 @@
     margin-bottom: 1rem;
   }
 
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+  }
+
   .navbar-links {
+    display: none;
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
+    margin-top: 1rem;
   }
 
-  .navbar-btn {
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .logout-btn {
     width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links a {
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: block;
     text-align: center;
   }
 }

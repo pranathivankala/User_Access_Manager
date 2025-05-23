@@ -1,9 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
-  /* background-color: #f9fafb; */
   margin: 0;
   padding: 0;
 }
@@ -14,23 +12,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 24px;
-  background: url('https://wallpaperaccess.com/full/1385525.jpg');
+  background: url('https://wallpaperaccess.com/full/1900901.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
-  animation: gradientMove 12s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-repeat: no-repeat;
 }
 
 .signup-box {
@@ -52,7 +37,7 @@ body {
   margin-bottom: 28px;
   font-size: 30px;
   font-weight: 700;
-  color: #1f2937;
+  color: #4f46e5;
   letter-spacing: 0.5px;
 }
 
@@ -91,7 +76,7 @@ body {
 
 .signup-box button {
   padding: 14px;
-  background-color: #2563eb;
+  background-color: #4f46e5;
   color: white;
   font-weight: 600;
   font-size: 16px;
@@ -102,7 +87,7 @@ body {
 }
 
 .signup-box button:hover {
-  background-color: #1d4ed8;
+  background-color: #4338ca;
   transform: translateY(-2px);
 }
 
